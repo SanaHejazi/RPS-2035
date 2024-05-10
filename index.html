@@ -17,47 +17,54 @@
 
   <body class="d-flex flex-column align-items-center bg-primaryColor">
 
-  <div id="Result" class="mt-5 text-white">
-    <h1 >Rock Paper Scissors</h1>
+  <div  class="mt-5 text-white ">
+    <h1 id="Result" >Rock Paper Scissors</h1>
   </div>
 
   <div id="Score" class="text-white mt-5 ">
-    <h2 class="d-inline-block">YOU</h2><h2 class="d-inline-block ms-1" id="PlayerScore">0</h2><h2 class="ms-1 d-inline-block">:</h2><h2 class="ms-1 d-inline-block" id="Ai">0</h2><h2 class="ms-1 d-inline-block">AI</h2>
+    <h2 class="d-inline-block">YOU</h2><h2 class="d-inline-block ms-1" id="PlayerScore">0</h2><h2 class="ms-1 d-inline-block">:</h2><h2 class="ms-1 d-inline-block" id="AiScore">0</h2><h2 class="ms-1 d-inline-block">AI</h2>
   </div>
 
 
-  <div id="Status" class="mt-5 text-white mb-5">
-  <h2>YOUR TURN !</h2>
+  <div  class="mt-5 text-white mb-5">
+  <h2 id="Status">YOUR TURN !</h2>
   </div>
 
 
   <div id="RockPapperScissor" class="d-flex flex-row mb-5">
+
     <div class="form-check d-flex flex-column align-items-center">
       <label class="form-check-label" for="flexRadioDefault1">
-    <img src="assets/images/paper%201.png">
-  </label>
-  <input class="form-check-input p-3 bg-warning mt-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-</div>
+        <img src="assets/images/paper%201.png">
+      </label>
+
+      <input onclick="PlayerChois='PAPPER';" class="form-check-input p-3 bg-warning mt-5" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    </div>
+
+
+
     <div class="form-check d-flex flex-column align-items-center">
       <label class="form-check-label" for="flexRadioDefault2">
-    <img src="assets/images/two%201.png">
-  </label>
-  <input class="form-check-input p-3 bg-warning mt-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-</div>
+        <img src="assets/images/two%201.png">
+      </label>
+      <input onclick="PlayerChois='SCISSOR'; " class="form-check-input p-3 bg-warning mt-5" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+    </div>
+
+
     <div class="form-check d-flex flex-column align-items-center">
       <label class="form-check-label" for="flexRadioDefault3">
-    <img src="assets/images/rock%201.png">
-  </label>
-  <input class="form-check-input p-3 bg-warning mt-5" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-</div>
+        <img src="assets/images/rock%201.png">
+      </label>
+      <input onclick="PlayerChois='ROCK' ;" class="form-check-input p-3 bg-warning mt-5" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+    </div>
   </div>
 
 
-  <div id="StartBtn" class="mt-5 ">
-    <button class=" btn btn-outline-light border-3 rounded-4 py-2 px-5 " type="button"><a class="text-white textdecorationoff display-5 pop400 mx-5">START</a></button>
+  <div id="StartBtn" class="mt-5">
+    <button onclick="PlayGame(PlayerChois)" class=" btn btn-outline-light border-3 rounded-4 py-2 px-5 " type="button"><a class="text-white textdecorationoff display-5 pop400 mx-5">START</a></button>
   </div>
-    <!-- scripts -->
-    <script src="script/main.js"></script>
+  <!-- scripts -->
+  <script src="script/main.js"></script>
   </body>
 
 

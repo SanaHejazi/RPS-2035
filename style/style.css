@@ -1,6 +1,31 @@
 :root {
+  --primary-color: rgb(59, 42, 159);
+  --primary-color100: #5141AA;
+  --seconbdary-color:rgb(250,131,5);
+  --black-color:#070707;
 }
 
 * {
   box-sizing: border-box;
+}
+@font-face {
+  font-family: pop400;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+.pop400{
+  font-family: pop400;
+}
+
+
+
+
+.bg-primaryColor{
+  background-color: rgb(59, 42, 159);
+}
+.bg-SecondaryColor{
+  background-color:rgb(250,131,5);
+}
+.textdecorationoff{
+  text-decoration: none;
 }

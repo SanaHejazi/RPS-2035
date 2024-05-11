@@ -72,41 +72,5 @@ function PlayGame(PlayerChois) {
 
 }
 
-/*
-    if (PlayerChois===CoputerChois)
-    {
-        result="it's Tie !"
-    }
-    else
-    {
-        switch (PlayerChois)
-            case "ROCK":
-                if (CoputerChois==="PAPPER")
-                {
-                    result="You Lose !"
-                } else {
-                    result="You Win !"
-                }
-                break;
-
-            case "PAPPER":
-                if (CoputerChois==="SCISSOR")
-                {
-                    result="You Lose !"
-                } else {
-                    result="You Win !"
-                }
-                break
-
-            case "SCISSOR":
-                if (CoputerChois==="ROCK")
-                {
-                    result="You Lose !"
-                } else {
-                    result="You Win !"
-                }
-                break;
-    }
-*/
 
 

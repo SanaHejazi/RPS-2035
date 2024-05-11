@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="rock papper scissor">
+
+    <!-- styles -->
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style/bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- title -->
+    <title>Rock Paper Scissor-Multi</title>
+</head>
+
+<body class="d-flex flex-column align-items-center bg-primaryColor">
+
+<div class="display-1 text-warning">
+<h1> Welcome To MultiPlayer </h1>
+</div>
+
+<div class="text-white pop400 mt-5">
+  <h2 class="display-3 d-inline-block pop400">Player1---</h2><h2 class="display-3 d-inline-block pop400" id="Player1Score">0</h2><h2 class="display-3 d-inline-block pop400 mx-5">:</h2><h2 class="display-3 d-inline-block pop400" id="Player2Score">0</h2><h2 class="display-3 d-inline-block pop400">---Player2</h2>
+</div>
+
+<div>
+      <button onclick="Start()" class="ms-5 btn btn-outline-light border-3 rounded-4 py-2 px-5 mt-5" type="button"><a class="text-white textdecorationoff display-5 pop400 mx-5">START</a></button>
+      <button class="ms-5 btn btn-outline-light border-3 rounded-4 py-2 px-5 mt-5" type="button"><a href="index.html" class="text-white textdecorationoff display-5 pop400 mx-5">LOCAL PLAY</a></button>
+      <button onclick="alert('FOR PLAYER 1:      W=ROCK   &   A=PAPPER   &   D=SCISSOR \n \n FOR PLAYER 2:     ←=PAPPER   &   ↑=ROCK   &   →=SCISSOR')" class="ms-5 btn btn-outline-light border-3 rounded-4 py-2 px-5 mt-5" type="button"><a class="text-white textdecorationoff display-5 pop400 mx-5">HELP ME !</a></button>
+</div>
+
+<div class="text-white my-5">
+    <h1 id="Result" class="display-2">Result</h1>
+</div>
+
+
+<div class="container mt-5">
+
+  <div class="row">
+
+    <div class="col-5 bg-primary rounded-5 me-5 ms-5 px-3 py-4">
+        <div>
+      <img src="assets/images/paper%201.png " width="30%" height="100%">
+      <img src="assets/images/two%201.png" width="30%" height="100%">
+      <img src="assets/images/rock%201.png" width="30%" height="100%">
+            </div>
+        <h2 id="P1Turn"></h2>
+    </div>
+
+    <div class="col-5 bg-primary rounded-5 px-3 py-4">
+        <div>
+        <img src="assets/images/paper%201.png" width="30%" height="100%">
+      <img src="assets/images/two%201.png" width="30%" height="100%">
+      <img src="assets/images/rock%201.png" width="30%" height="100%">
+        </div>
+        <h2 id="P2Turn"></h2>
+    </div>
+  </div>
+</div>
+
+<script src="script/Multi.js"></script>
+</body>
+</html>

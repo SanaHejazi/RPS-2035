@@ -30,15 +30,14 @@ document.addEventListener('keydown', function(event)
         p1Turn.textContent=P1CHOOSE;
         result.textContent=" IT'S TIE !"
         p2Turn.textContent=P2CHOOSE
-        P1SCORE++
-        P2SCORE++
+
     }
     else if(event.keyCode == 37) { // AL
         P2CHOOSE="PAPPER";
         p1Turn.textContent=P1CHOOSE;
         result.textContent=" PLAYER 2 WIN !"
         p2Turn.textContent=P2CHOOSE;
-        P2SCORE++
+
     }
     else if(event.keyCode == 39){ //AR
         P2CHOOSE="SCISSOR";
@@ -74,6 +73,7 @@ document.addEventListener('keydown', function(event)
         p1Turn.textContent=P1CHOOSE;
         p2Turn.textContent=P2CHOOSE;
         result.textContent=" IT'S TIE !"
+        console.log("A  -  <-")
 
     }
     else if(event.keyCode == 39){
@@ -124,18 +124,24 @@ document.addEventListener('keydown', function(event)
     }
 })
 
+
+
     console.log(" SCORE IF STATEMENT IS RUNNING")
 
     if (result.textContent===" PLAYER 1 WIN !")
     {
+        console.log("P1 Win")
         P1SCORE++
     }
     else if (result.textContent===" PLAYER 2 WIN !")
     {
+        console.log("P2 Win")
         P2SCORE++
     }
     else if (result.textContent===" IT'S TIE !")
     {
+        console.log("P1     Win")
+        console.log("P2     Win")
         P1SCORE++
         P2SCORE++
     }

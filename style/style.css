@@ -21,10 +21,10 @@
 
 
 .bg-primaryColor{
-  background-color: rgb(59, 42, 159);
+  background-color: var(--primary-color);
 }
 .bg-SecondaryColor{
-  background-color:rgb(250,131,5);
+  background-color:var(--seconbdary-color);
 }
 .textdecorationoff{
   text-decoration: none;

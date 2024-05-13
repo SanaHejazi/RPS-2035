@@ -1,11 +1,13 @@
 const choises=["ROCK","PAPPER","SCISSOR"];
 let Playerscore=document.getElementById("PlayerScore");
 let=playerscore=0;
+let check=0;
 let Aiscore=document.getElementById("AiScore")
 let=aiscore=0;
 let Result=document.getElementById("Result")
 let Status=document.getElementById("Status")
 let PlayerChois;
+let StartText=document.getElementById("Start")
 
 function PlayGame(PlayerChois) {
     const CoputerChois = choises[Math.floor(Math.random() * 3)]
@@ -15,7 +17,11 @@ function PlayGame(PlayerChois) {
     console.log(CoputerChois)
 
 
-    if (PlayerChois === CoputerChois) {
+
+
+    if (check==1)
+    {
+        if (PlayerChois === CoputerChois) {
         result = "it's Tie !"
         Result.style.color='yellow'
         aiscore++
@@ -61,6 +67,8 @@ function PlayGame(PlayerChois) {
 
 
     }
+
+
         Aiscore.textContent = aiscore
         Playerscore.textContent = playerscore
         console.log(result)
@@ -68,6 +76,13 @@ function PlayGame(PlayerChois) {
         Status.textContent = "Computer Choose :" + " " + CoputerChois         //FIX THIS LINE...
         Aiscore.textContent = aiscore
         Playerscore.textContent = playerscore
+        StartText.textContent="Play Again"
+
+    }
+    else {
+        alert("Please Select Your Choise")
+    }
+
 
 
 }
